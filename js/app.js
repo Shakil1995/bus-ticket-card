@@ -1,36 +1,4 @@
 
-// document.getElementById("class-plusBtn").addEventListener("click",function(){
-
-//     handleFirstClassTicket(true);
-// //   const  firstClassInput=document.getElementById('firstClassInputID');
-// //   const firstClassInputValue=parseInt(firstClassInput.value);
-// // const firstClassNewCount=firstClassInputValue +1;
-// // //   console.log("update :"+ firstClassNewCount);
-
-// //  firstClassInput.value=firstClassNewCount;
-// // //  console.log(firstClassNewCount);
-
-// // const firstClassTotalPrice=firstClassNewCount*150;
-// // document.getElementById("ticket-price").innerText="$"+ firstClassTotalPrice;
-
-// });
-
-// document.getElementById("class-minusBtn").addEventListener("click",function(){
-//     handleFirstClassTicket(false)
-// //     const  firstClassInput=document.getElementById('firstClassInputID');
-// //     const firstClassInputValue=parseInt(firstClassInput.value);
-// //   const firstClassNewCount=firstClassInputValue -1;
-// //   //   console.log("update :"+ firstClassNewCount);
-  
-// //    firstClassInput.value=firstClassNewCount;
-// //   //  console.log(firstClassNewCount);
-  
-// //   const firstClassTotalPrice=firstClassNewCount*150;
-// //   document.getElementById("ticket-price").innerText="$"+ firstClassTotalPrice;
-  
-//   });
-
-
 
   document.getElementById("class-plusBtn").addEventListener("click",function(){
  handleFirstClassTicket(true);
@@ -72,6 +40,7 @@ document.getElementById("economy-minusBtn").addEventListener("click",function(){
      document.getElementById("ticket-price").innerText="৳"+ firstClassTotalPrice;
 
      calculateTotal()
+    //  confiramBookBtn()
   } 
 
 
@@ -95,6 +64,7 @@ document.getElementById("economy-minusBtn").addEventListener("click",function(){
      document.getElementById("economy-ticket-priceID").innerText="৳"+ economyClassTotalPrice;
 
      calculateTotal()
+    //  confiramBookBtn()
   } 
 
 
@@ -115,8 +85,41 @@ document.getElementById("economy-minusBtn").addEventListener("click",function(){
        const totalAmount=subTotalPrice+tax;
 
        document.getElementById("total-amountID").innerText="৳"+totalAmount;
+     
+    //    confiramBookBtn() 
        
+    //    return totalAmount;
   }
+
+
+
+
+
+  //confirm Ticket Page Js file
+
+
+  function confiramBookBtn(){
+    
+      const formCity= document.getElementById("formCityId").value;
+    document.getElementById("showFormCityID").innerText=formCity;
+
+    const date= document.getElementById("toCityId").value;
+    document.getElementById("showToCity").innerText=date;
+
+
+    const issueDate=document.getElementById("issueDateID").value;
+    const newIssueDate=parseInt(issueDate.value);
+    document.getElementById("showIssueDateID").value=newIssueDate;
+
+    const returnDate=document.getElementById("returnDateID").value;
+    const newReturnDate=parseInt(returnDate.value);
+    document.getElementById("showReturnDateID").value=newReturnDate;
+
+
+
+
+}
+
 
 
 

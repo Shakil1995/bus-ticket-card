@@ -7,7 +7,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    background:url("images/p1.jpg");
+    background:url("images/bus.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
@@ -62,7 +62,7 @@ nav ul li a:hover, a.active{
     padding: 10px;
     border-radius: 5px;
     float: right;
-    width: 80%;
+    width: 90%;
     margin: 50px 0px 0px 80px;
 }
 .booking-form h3{
@@ -130,3 +130,5 @@ padding-left: 300px;
     display: flex;
     justify-content: space-between;
 }
+
+
